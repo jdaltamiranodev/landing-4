@@ -49,6 +49,7 @@ h1, h2, h3 {
 h1 {
   font-family: var(--fuentePrincipal);
   font-size: 4rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -92,7 +93,7 @@ h3 {
 }
 
 .imagen-fondo {
-  background-image: url(landing-4/images/pic01.jpg);
+  background-image: url(../images/pic01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 50rem;
@@ -126,7 +127,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 20%;
-  border: 3px solid green;
   text-align: center;
 }
 
@@ -226,6 +226,61 @@ h3 {
 }
 
 /* Blog */
-.contenedor__blog {
+.contenedor__seccion--blog {
+  height: 70rem;
   margin-top: 8rem;
+  margin-bottom: 20rem;
+}
+
+.contenedor__blog {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  grid-template-rows: 60rem;
+  justify-content: center;
+  column-gap: 4rem;
+}
+
+.contenido__blog {
+  background-color: var(--blanco);
+}
+
+.contenido__blog h4,
+.contenido__blog p {
+  margin-left: 2rem;
+  text-align: start;
+}
+
+.contenido__blog p {
+  font-size: 1.5rem;
+}
+
+.boton__blog {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.boton__blog--leer {
+  /* width: 20%;
+  height: 30%; */
+  background-color: var(--colorPrincipal);
+  color: #ffff;
+  padding: 1.5rem;
+  margin-left: 2rem;
+  border-radius: .5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+}
+
+.boton__blog--comentar {
+  /* width: 20%;
+  height: 30%; */
+  background-color: var(--colorSecundario);
+  color: #ffff;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
 }

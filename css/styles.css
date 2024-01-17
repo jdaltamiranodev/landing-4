@@ -61,6 +61,10 @@ h3 {
   font-size: 2.4rem;
 }
 
+button {
+  cursor: pointer;
+}
+
 .contenedor {
   background-color: var(--colorFondo);
 }
@@ -174,6 +178,10 @@ h3 {
   border: none;
 }
 
+/* /Portafolio */
+.contenedor {
+  background-color: var(--colorFondo);
+}
 
 .portafolio {
 }
@@ -222,6 +230,7 @@ h3 {
 
 .boton__encontrar {
   background-color: var(--colorSecundario);
+  width: 18rem;
   color: #ffff;
   border-radius: .5rem;
   font-size: 1.6rem;
@@ -232,7 +241,6 @@ h3 {
 
 /* Blog */
 .contenedor__seccion--blog {
-  background-color: var(--colorFondo);
   height: 50rem;
   /* height: 50rem; */ /* 16/01/2024 */
   margin-top: 8rem;
@@ -240,6 +248,8 @@ h3 {
 }
 
 .contenedor__blog {
+  background-color: var(--colorFondo);
+  height: auto;
   display: grid;
   grid-template-columns: repeat(2, 30%);
   grid-template-rows: 60rem;
@@ -373,6 +383,16 @@ h3 {
 .footer__columnas--redes {
   border: .1rem solid red;
 }
+
+/* .footer__contacto {
+  
+}
+
+.footer__contacto--datos {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+} */
 
 .footer__derechos {
   display: flex;
